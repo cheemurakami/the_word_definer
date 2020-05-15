@@ -23,7 +23,9 @@ This is a simple word definer website using Ruby.
 | **Spec 8: Add routes for adding a new word, updating words and deleting words **| **** | ****
 | **Spec 9: Create a definition with an attribute of name (and id) **| **** | ****
 | **Spec 10: All created definitions can be saved **| **** | ****
-| **Spec 11: All created definitions can be listed in a home page **| **** | ****
+| **Spec 11: All created definitions can be listed in a browser page **| **** | ****
+| **Spec 12: Add routes to display definition list **| **** | ****
+| **Spec 13: Find a definition by id **| **** | ****
 
 
 
