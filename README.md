@@ -30,9 +30,7 @@ This is a simple word definer website using Ruby.
 | **Spec 13: Update a definition by id **| **"hello"** | **"hello"**
 | **Spec 14: Delete a definition by id **| **** | ****
 | **Spec 15: Add routes for adding a new definition, updating definitions and deleting definitions **| **** | ****
-
-
-| **Extra Spec 15: Sort words alphabetically **| **** | ****
+| **Extra Spec 16: Sort words alphabetically **| **** | ****
 
 ## Setup/Installation Requirements
 
