@@ -104,7 +104,9 @@ describe("#Word") do
       word1.save
       word2 = Word.new({:name => "apple", :id => nil})
       word2.save
-      expect(Word.sort).to eq([word2, word1])
+      word3 = Word.new({:name => "cherry", :id => nil})
+      word3.save
+      expect(Word.sort).to eq([word2, word1, word3])
     end
   end
 

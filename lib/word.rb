@@ -42,4 +42,8 @@ class Word
   def definitions
     Definition.find_by_word(self.id)
   end
+  
+  def self.sort
+    self.all.sort_by {| word | word.name }
+  end
 end
