@@ -2,6 +2,8 @@
 
 https://github.com/cheemurakami/the_word_definer
 
+https://shielded-thicket-31427.herokuapp.com/
+
 #### Ruby for Epicodus, _05/15/2020_
 
 #### By _**Chisato Murakami**_
@@ -21,13 +23,16 @@ This is a simple word definer website using Ruby.
 | **Spec 6: Update a word by id **| **"defined"** | **"defined"**
 | **Spec 7: Delete a word by id **| **** | ****
 | **Spec 8: Add routes for adding a new word, updating words and deleting words **| **** | ****
-| **Spec 9: Create a definition with an attribute of name (and id) **| **** | ****
+| **Spec 9: Create a definition with an attribute of name (and id) **| **"define is..."** | **"define is..."**
 | **Spec 10: All created definitions can be saved **| **** | ****
 | **Spec 11: Find a definition by id **| **** | ****
 | **Spec 12: Find a definition by word class **| **** | ****
 | **Spec 13: Update a definition by id **| **"hello"** | **"hello"**
 | **Spec 14: Delete a definition by id **| **** | ****
 | **Spec 15: Add routes for adding a new definition, updating definitions and deleting definitions **| **** | ****
+
+
+| **Extra Spec 15: Sort words alphabetically **| **** | ****
 
 ## Setup/Installation Requirements
 
@@ -46,7 +51,7 @@ _If you run our program and find any other bugs or issues in it's functionality 
 
 ## Technologies Used
 
-_Ruby_
+_Ruby_, _Bootstrap_
 
 ### License
 

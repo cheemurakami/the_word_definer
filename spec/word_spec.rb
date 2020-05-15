@@ -98,4 +98,14 @@ describe("#Word") do
     end
   end
 
+  describe(".sort") do
+    it("sorts words alphabetically")do
+      word1 = Word.new({:name => "banana", :id => nil})
+      word1.save
+      word2 = Word.new({:name => "apple", :id => nil})
+      word2.save
+      expect(Word.sort).to eq([word2, word1])
+    end
+  end
+
 end
