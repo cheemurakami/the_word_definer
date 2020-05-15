@@ -1,0 +1,14 @@
+<h1>Update the word: "<%= @word.name %>" <h1>
+
+<form action="/words/<%= @word.id() %>" method="post">
+<div class="form-group">
+  <input name="_method" type="hidden" value="patch" class="form-control">
+
+  <label for="name">Rename word</label>
+  <input id="name" name="name" type="text" class="form-control">
+</div>
+  <button type="submit" class="btn btn-success">Update</button>
+</form>
+
+<div>
+<h5><a href="/words">Return to album list</a></h5>
