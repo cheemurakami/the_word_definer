@@ -79,8 +79,8 @@ describe("#Word") do
       word1.save
       word2 = Word.new({:name => "meet", :id => nil})
       word2.save
-      word1.delete
-      expect(Word.all).to eq([word2])
+      word2.delete
+      expect(Word.all).to eq([word1])
     end
   end
 
