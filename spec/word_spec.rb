@@ -48,4 +48,12 @@ describe("#Word") do
     end
   end
 
+  describe('#==') do
+    it("is the same word if it has the same attributes as another album") do
+      word1 = Word.new({:name => "define", :id => nil})
+      word2 = Word.new({:name => "define", :id => nil})
+      expect(word1).to(eq(word2))
+    end
+  end
+
 end
