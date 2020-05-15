@@ -48,5 +48,15 @@ describe "#Definition" do
     end
   end
 
+  describe('.find') do
+    it("finds a definition by id") do
+      definition1 = Definition.new({:name => "define", :word_id => @word.id, :id => nil})
+      definition1.save()
+      definition2 = Definition.new({:name => "define", :word_id => @word.id, :id => nil})
+      definition2.save()
+      expect(Definition.find(definition1.id)).to(eq(definition1))
+    end
+  end
+
 
 end
