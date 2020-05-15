@@ -87,5 +87,13 @@ describe "#Definition" do
     end
   end
 
+  describe('#delete')do
+    it("deletes a definition by id") do
+      definition = Definition.new({:name => "Hello", :word_id => @word.id, :id => nil})
+      definition.delete
+      expect(Definition.all).to eq([])
+    end
+  end
+
 
 end
