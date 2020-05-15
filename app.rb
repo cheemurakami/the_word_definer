@@ -74,3 +74,10 @@ patch ('/words/:id/definitions/:definition_id') do
   definition.update(params[:name], @word.id)
   erb(:a_word)
 end
+
+delete ('/words/:id/definitions/:definition_id') do
+  definition = Definition.find(params[:definition_id].to_i)
+  definition.delete
+  @word = Word.find(params[:id].to_i)
+  erb(:a_word)
+end
