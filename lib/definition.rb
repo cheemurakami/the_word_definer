@@ -27,4 +27,5 @@ class Definition
     @@definitions = {}
     @@total_rows = 0
   end
+
 end

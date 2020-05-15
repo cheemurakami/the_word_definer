@@ -39,5 +39,14 @@ describe "#Definition" do
     end
   end
 
+  describe(".clear") do
+    it("clears all definitions") do
+      definition1 = Definition.new({:name => "define", :word_id => @word.id, :id => nil})
+      definition1.save
+      Definition.clear
+      expect(Definition.all).to eq([])
+    end
+  end
+
 
 end
