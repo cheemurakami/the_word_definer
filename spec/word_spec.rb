@@ -64,4 +64,13 @@ describe("#Word") do
     end
   end
 
+  describe('#update') do
+    it("updates a word by id") do
+      word1 = Word.new({:name => "define", :id => nil})
+      word1.save
+      word1.update("defined")
+      expect(word1.name).to eq("defined")
+    end
+  end
+
 end
