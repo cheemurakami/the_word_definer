@@ -31,4 +31,7 @@ class Word
     @@words[id]
   end
 
+  def update(updated_word)
+    @name = updated_word
+  end
 end
