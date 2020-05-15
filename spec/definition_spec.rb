@@ -27,7 +27,15 @@ describe "#Definition" do
     it("shows all of the definitions") do
       definition1 = Definition.new({:name => "define", :word_id => @word.id, :id => nil})
       definition1.save
-      expect(Definition.all).to eq([word1])
+      expect(Definition.all).to eq([definition1])
+    end
+  end
+
+  describe("#save") do
+    it("saves a definition in a hash") do
+      definition1 = Definition.new({:name => "define", :word_id => @word.id, :id => nil})
+      definition1.save
+      expect(Definition.all).to eq([definition1])
     end
   end
 
