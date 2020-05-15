@@ -27,6 +27,7 @@ This is a simple word definer website using Ruby.
 | **Spec 12: Find a definition by word class **| **** | ****
 | **Spec 13: Update a definition by id **| **"hello"** | **"hello"**
 | **Spec 14: Delete a definition by id **| **** | ****
+| **Spec 15: Add routes for adding a new definition, updating definitions and deleting definitions **| **** | ****
 
 ## Setup/Installation Requirements
 
