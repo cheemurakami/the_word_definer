@@ -44,4 +44,10 @@ class Definition
   def word
     Word.find(self.word_id)
   end
+
+  def update(updated_word, word_id)
+    self.name = updated_word
+    self.word_id = word_id
+    @@definitions[self.id] = Definition.new({:name => self.name, :word_id => self.word_id, :id => self.id})
+  end
 end
