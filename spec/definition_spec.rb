@@ -60,13 +60,21 @@ describe "#Definition" do
 
   describe('.find_by_word') do
     it("finds definitions for a word") do
-      word1 = Word.new({:name => "define", :id => nil})
-      word1.save()
-      definition1 = Definition.new({:name => "state or describe exactly the nature, scope, or meaning of.", :word_id => word1.id, :id => nil})
-      definition1.save()
-      # definition2 = Definition.new({:name => "mark out the boundary or limits of", :word_id => @word.id, :id => nil})
-      # definition2.save()
-      expect(Definition.find_by_word(word1.id)).to eq([definition1])
+      word2 = Word.new({:name => "define", :id => nil})
+      word2.save()
+      definition = Definition.new({:name => "Hello", :word_id => @word.id, :id => nil})
+      definition.save()
+      definition2 = Definition.new({:name => "Hi", :word_id => word2.id, :id => nil})
+      definition2.save()
+      expect(Definition.find_by_word(word2.id)).to eq([definition2])
+    end
+  end
+
+  describe('#word') do
+    it("finds the word a definition belongs to") do
+      definition = Definition.new({:name => "Hello", :word_id => @word.id, :id => nil})
+      definition.save()
+      expect(definition.word()).to(eq(@word))
     end
   end
 

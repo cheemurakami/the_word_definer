@@ -7,6 +7,7 @@ describe("#Word") do
   
   before(:each) do
     Word.clear()
+    Definition.clear()
   end
 
   describe("initialize") do
@@ -87,13 +88,13 @@ describe("#Word") do
 
   describe("#definitions") do
     it("returns a word's definitions") do
-      word1 = Word.new({:name => "define", :id => nil})
-      word1.save
-      definition1 = Definition.new({:name => "state or describe exactly the nature, scope, or meaning of.", :word_id => word1.id, :id => nil})
-      definition1.save()
-      definition2 = Definition.new({:name => "mark out the boundary or limits of", :word_id => @word.id, :id => nil})
+      word = Word.new({:name => "define", :id => nil})
+      word.save
+      definition = Definition.new({:name => "Hello", :word_id => word.id, :id => nil})
+      definition.save()
+      definition2 = Definition.new({:name => "Hi", :word_id => word.id, :id => nil})
       definition2.save()
-      expect(word1.definitions).to eq([definition1, definition2])
+      expect(word.definitions).to eq([definition, definition2])
     end
   end
 

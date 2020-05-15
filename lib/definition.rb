@@ -25,7 +25,6 @@ class Definition
   
   def self.clear
     @@definitions = {}
-    @@total_rows = 0
   end
 
   def self.find(id)
@@ -40,5 +39,9 @@ class Definition
       end
     end
     definitions
+  end
+
+  def word
+    Word.find(self.word_id)
   end
 end
