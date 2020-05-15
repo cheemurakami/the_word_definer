@@ -21,7 +21,7 @@ This is a simple word definer website using Ruby.
 | **Spec 5: Find a word by id **| **** | ****
 | **Spec 6: Update a word by id **| **"defined"** | **"defined"**
 | **Spec 7: Delete a word by id **| **** | ****
-| **Spec 8: Add routes for updating and deleting words with home route link**| **** | ****
+| **Spec 8: Add routes for adding a new word, updating words and deleting words**| **** | ****
 
 
 
