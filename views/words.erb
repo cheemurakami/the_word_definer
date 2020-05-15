@@ -6,6 +6,8 @@
         <li><a href="/words/<%= word.id %>"><%= word.name%></a></li>
     <% end %>
   </ul>
+  <h6><a href="/words?sorted=true">Sort by alphabetically</a></h6>
+  <h6><a href="/words">Undo</a><h6>
 <% else %>
   <h4>There are currently no words to display.</h4>
 <% end %>

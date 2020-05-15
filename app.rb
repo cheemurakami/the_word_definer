@@ -11,7 +11,11 @@ get ('/') do
 end
 
 get ('/words') do
-  @words = Word.all
+  if params[:sorted]
+    @words = Word.sort
+  else
+    @words = Word.all
+  end
   erb(:words)
 end
 
