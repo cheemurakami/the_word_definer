@@ -78,5 +78,14 @@ describe "#Definition" do
     end
   end
 
+  describe('#update') do
+    it('updates a definition by id') do
+      definition = Definition.new({:name => "Hello", :word_id => @word.id, :id => nil})
+      definition.save()
+      definition.update("Hi", @word.id)
+      expect(definition.name).to eq("Hi")
+    end
+  end
+
 
 end

@@ -25,11 +25,8 @@ This is a simple word definer website using Ruby.
 | **Spec 10: All created definitions can be saved **| **** | ****
 | **Spec 11: Find a definition by id **| **** | ****
 | **Spec 12: Find a definition by word class **| **** | ****
-
-
-| **Spec 11: All created definitions can be listed in a browser page **| **** | ****
-| **Spec 12: Add routes to display definition list **| **** | ****
-
+| **Spec 13: Update a definition by id **| **"hello"** | **"hello"**
+| **Spec 14: Delete a definition by id **| **** | ****
 
 ## Setup/Installation Requirements
 

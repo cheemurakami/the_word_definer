@@ -1,19 +1,19 @@
 <h2>Definition: <%= @definition.name %></h2>
-<h3>Word: <%= @definition.album.name %></h3>
+<h3>Word: <%= @definition.word.name %></h3>
 
-<form action="/albums/<%= @song.album.id %>/songs/<%= @song.id %>" method="post">
+<form action="/words/<%= @definition.word.id %>/definitions/<%= @definition.id %>" method="post">
   <input name="_method" type="hidden" value="patch">
 
-  <label for="name">Rename song</label>
+  <label for="name">Rewrite definition</label>
   <input id="name" name="name" type="text">
 
-  <button type="submit">Update song</button>
+  <button type="submit">Update definition</button>
 </form>
 
-<form action="/albums/<%= @song.album.id %>/songs/<%= @song.id %>" method="post">
+<form action="/words/<%= @definition.word.id %>/definitions/<%= @definition.id %>" method="post">
   <input name="_method" type="hidden" value="delete">
 
-  <button type="submit">Delete song</button>
+  <button type="submit">Delete definition</button>
 </form>
 
-<a href="/albums/<%= @song.album.id %>">Back to <%= @song.album.name %></a>
+<a href="/words/<%= @definition.word.id %>">Back to <%= @definition.word.name %></a>
