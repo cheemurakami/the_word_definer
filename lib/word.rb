@@ -34,4 +34,8 @@ class Word
   def update(updated_word)
     @name = updated_word
   end
+
+  def delete
+    @@words.delete(self.id)
+  end
 end
