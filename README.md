@@ -16,7 +16,12 @@ This is a simple word definer website using Ruby.
 | **Spec 1: Create a word with an attribute of name (and id) **| **"define"** | **"define"**
 | **Spec 2: All created words can be saved **| **** | ****
 | **Spec 3: All created words can be listed in a home page **| **** | ****
-| **Spec 4: Add routes to display  **| **** | ****
+| **Spec 4: Add routes to display words list **| **** | ****
+
+| **Spec 5: Find a word by id **| **** | ****
+| **Spec 6: Update a word by id **| **** | ****
+| **Spec 7: Delete a word by id **| **** | ****
+| **Spec 8: Add routes for updating and deleting words with home route link**| **** | ****
 
 
 
