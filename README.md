@@ -1,6 +1,6 @@
 # _The Word Definer_
 
-https://github.com/cheemurakami/message_board
+https://github.com/cheemurakami/the_word_definer
 
 #### Ruby for Epicodus, _05/15/2020_
 
@@ -13,8 +13,10 @@ This is a simple word definer website using Ruby.
 
 |  Behavior                 |  Input  | Output
 |---------------------------|---------|-------
-| **Spec 1:  **| **** | ****
-| **Spec 2:  **| **** | ****
+| **Spec 1: Create a word with an attribute of name (and id) **| **"define"** | **"define"**
+| **Spec 2: All created words can be saved **| **** | ****
+| **Spec 3: All created words can be listed in a home page **| **** | ****
+
 
 
 ## Setup/Installation Requirements
